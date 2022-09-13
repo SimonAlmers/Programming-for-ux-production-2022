@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "akamud.vscode-theme-onedark",
+    "esbenp.prettier-vscode",
+    "ritwickdey.liveserver",
+    "formulahendry.auto-rename-tag",
+    "wmaurer.change-case",
+    "ecmel.vscode-html-css",
+    "syler.sass-indented",
+    "bibhasdn.unique-lines",
+    "jrebocho.vscode-random"
+  ]
+}
