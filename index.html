@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        padding-bottom: 100vh;
+      }
+    </style>
   </head>
   <body>
+    Här är våra heading element
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
+
     <p>The quick brown foxk jumpes over the lazy dog</p>
 
     <a href="https://google.com/">Google</a>
@@ -62,5 +69,105 @@
         cumque magnam officiis!
       </p>
     </div>
+
+    <!--  -->
+
+    <header></header>
+    <div></div>
+    <article></article>
+    <nav></nav>
+    <section>
+      <h1>Doftljus</h1>
+    </section>
+    <footer></footer>
+
+    <!-- Listor -->
+    <div>
+      <ul>
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+      </ul>
+
+      <ol>
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+      </ol>
+    </div>
+
+    <!-- Forms -->
+
+    <form>
+      <label for="emailInput">E-post:</label>
+      <input
+        type="email"
+        name=""
+        id="emailInput"
+        placeholder="förnam.efternamn@example.com"
+      />
+      <br />
+      <br />
+      <br />
+      <label for="passwordInput">Lösenord:</label>
+      <input type="password" id="passwordInput" />
+      <br />
+      <br />
+      <br />
+      <label for="messageInput">Meddelande:</label>
+      <textarea
+        name=""
+        id="messageInput"
+        cols="30"
+        rows="10"
+        placeholder="Skriv ditt meddelande här..."
+      ></textarea>
+      <br />
+      <br />
+      <br />
+
+      <label for="newsletterRejectCheckbox">
+        <input type="checkbox" name="" id="newsletterRejectCheckbox" />
+        Klicka här om du absolut inte vill ha vårt nyhetsbrev
+      </label>
+
+      <br />
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>Vad är din favoritfrukt?</legend>
+
+        <label for="bananaRadioButton">
+          <input type="radio" name="favoriteFruit" id="bananaRadioButton" />
+          Banan
+        </label>
+        <label for="appleRadioButton">
+          <input type="radio" name="favoriteFruit" id="appleRadioButton" />
+          Äpple
+        </label>
+        <label for="orangeRadioButton">
+          <input type="radio" name="favoriteFruit" id="orangeRadioButton" />
+          Apelsin
+        </label>
+      </fieldset>
+
+      <br /><br /><br />
+
+      <label for="cityInput">Vilken stad bor du i?</label>
+      <select name="" id="cityInput">
+        <option value="" disabled selected>Välj en stad i listan</option>
+        <optgroup label="Storstäder">
+          <option value="1">Stockholm</option>
+          <option value="2">Göteborg</option>
+          <option value="3">Malmö</option>
+        </optgroup>
+        <option value="4">Skövde</option>
+      </select>
+
+      <br />
+      <br />
+      <br />
+      <button type="reset">Rensa</button>
+      <button type="submit">Skicka</button>
+    </form>
   </body>
 </html>
