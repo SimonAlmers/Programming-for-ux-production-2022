@@ -1,0 +1,38 @@
+h1 {
+  background-color: red;
+  display: block;
+}
+
+p {
+  display: block;
+}
+
+.flexboxContainer {
+  display: flex;
+  background-color: coral;
+  justify-content: center;
+  justify-content: end;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: start;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 32px;
+}
+
+.flexboxItem {
+  border: 3px solid black;
+}
+
+header {
+  background-color: pink;
+  display: flex;
+  padding: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 32px;
+}
