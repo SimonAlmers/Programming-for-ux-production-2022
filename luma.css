@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background-color: #f6f1ed;
+}
+
+#mainMenu {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+#mainMenu img {
+  height: 30px;
+}
+
+#mainMenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+header {
+  height: 50vh;
+  background-image: url("/assets/images/hero-image.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  width: 45ch;
+}
+
+header button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  margin-right: 16px;
+}
+
+section.productSection {
+  padding: 48px;
+}
+
+section.productSection > h1,
+section.productSection > h2,
+section.productSection > p {
+  text-align: center;
+}
+
+section.productSection > p {
+  width: 45ch;
+  margin: auto;
+}
+
+section.productSection ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.productCard {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 285px;
+}
+
+.productCard img {
+  width: 100%;
+}
+
+.productCard div {
+  padding: 8px 24px;
+}

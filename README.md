@@ -36,3 +36,9 @@ Vi har under kursens första dag:
   - Radbrytningar: `<br>`
   - Horisontella avgränsare: `<hr>`
   - Divisions: `<div>`
+
+# Dag 2 - Samanfattning
+
+---
+
+Under dag 2 har vi gått igenom
