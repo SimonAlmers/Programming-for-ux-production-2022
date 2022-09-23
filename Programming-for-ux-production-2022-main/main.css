@@ -1,0 +1,61 @@
+* {
+  font-family: sans-serif;
+}
+
+p {
+  font-family: serif;
+}
+
+h1 {
+  color: red;
+  text-shadow: 5px 5px 10px rgba(0, 255, 0, 0.9);
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  text-transform: uppercase;
+}
+
+p {
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: capitalize;
+
+  text-align: center;
+  text-align: right;
+  text-align: left;
+  text-indent: 50px;
+
+  font-size: 16px;
+  line-height: 32px;
+
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-weight: 900;
+}
+
+ul {
+  background-color: red;
+  list-style: none;
+  padding: 24px;
+}
+
+ul li {
+  background-color: #fff;
+  margin-bottom: 8px;
+  border: 5px solid black;
+  border-radius: 8px;
+  border-bottom-color: chartreuse;
+  padding: 8px 32px 16px;
+
+  /* Samma runtom hela */
+  padding: 24px;
+  /* Padding i Y-led och X-led */
+  padding: 8px 24px;
+  /* Padding i top, X-led och botten  */
+  padding: 8px 24px 16px;
+  /* Padding i top, höger, botten och vänster  */
+  padding: 8px 24px 16px 0px;
+  padding: 24px;
+}
