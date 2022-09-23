@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hur funkar HTML?</title>
+
+    <style>
+      body {
+        padding-bottom: 100vh;
+      }
+
+      #styleExample {
+        background-color: fuchsia;
+      }
+
+      .myClass {
+        color: chartreuse;
+      }
+
+      .xlFontSize {
+        font-size: 96px;
+      }
+
+      #idTest {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="myClass xlFontSize">Här är våra heading element</h1>
+    <h1>那不是杂志。那是字</h1>
+    <h1 class="myClass">Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3 class="myClass">Heading 3</h3>
+    <h3 id="idTest">Id test</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>The quick brown foxk jumpes over the lazy dog</p>
+
+    <a href="https://google.com/">Google</a>
+    <a href="https://google.com/" target="_blank">Google (Öppnas i ny flik)</a>
+
+    <p>
+      Avfölj vårt nyhetsbrev
+      <a href="/unsubscribe.html">här</a>.
+    </p>
+
+    <img
+      src="http://placekitten.com/200/300"
+      alt="A picture of a cat saying 'meow'"
+    />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, similique
+      consequuntur. <br /><br /><br />
+      Ab accusantium sunt mollitia animi quidem illum vero a, eligendi obcaecati
+      quod nam eum nemo laboriosam quis incidunt harum, error quaerat. Ex nihil,
+      modi eum odio deleniti, excepturi quidem ratione nostrum aut consequatur,
+      temporibus voluptatibus corporis nesciunt ea fugiat!
+    </p>
+
+    <hr />
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+      distinctio explicabo atque veniam ratione facilis consequatur, quis
+      excepturi, expedita, maiores voluptatem minima tempore exercitationem.
+      Autem atque ex tempora doloribus dicta?
+    </p>
+
+    <div>
+      <h1>Doftljus</h1>
+      <img
+        src="https://images.unsplash.com/photo-1605651202774-7d573fd3f12d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2NlbnRlZCUyMGNhbmRsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+        alt=""
+        width="100"
+      />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda unde
+        hic sapiente optio reprehenderit ea at recusandae alias provident
+        accusantium molestias eius dolorum error blanditiis est voluptate in
+        fuga excepturi aspernatur iure fugit, nesciunt aliquid labore. Ipsum,
+        corrupti illo delectus odio, veniam quo, inventore impedit tempora ex
+        cumque magnam officiis!
+      </p>
+    </div>
+
+    <!--  -->
+
+    <header></header>
+    <div></div>
+    <article></article>
+    <nav></nav>
+    <section>
+      <h1>Doftljus</h1>
+    </section>
+    <footer></footer>
+
+    <!-- Listor -->
+    <div>
+      <ul>
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+      </ul>
+
+      <ol>
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+      </ol>
+    </div>
+
+    <!-- Forms -->
+
+    <form>
+      <label for="emailInput">E-post:</label>
+      <input
+        type="email"
+        name=""
+        id="emailInput"
+        placeholder="förnam.efternamn@example.com"
+      />
+      <br />
+      <br />
+      <br />
+      <label for="passwordInput">Lösenord:</label>
+      <input type="password" id="passwordInput" />
+      <br />
+      <br />
+      <br />
+      <label for="messageInput">Meddelande:</label>
+      <textarea
+        name=""
+        id="messageInput"
+        cols="30"
+        rows="10"
+        placeholder="Skriv ditt meddelande här..."
+      ></textarea>
+      <br />
+      <br />
+      <br />
+
+      <label for="newsletterRejectCheckbox">
+        <input type="checkbox" name="" id="newsletterRejectCheckbox" />
+        Klicka här om du absolut inte vill ha vårt nyhetsbrev
+      </label>
+
+      <br />
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>Vad är din favoritfrukt?</legend>
+
+        <label for="bananaRadioButton">
+          <input type="radio" name="favoriteFruit" id="bananaRadioButton" />
+          Banan
+        </label>
+        <label for="appleRadioButton">
+          <input type="radio" name="favoriteFruit" id="appleRadioButton" />
+          Äpple
+        </label>
+        <label for="orangeRadioButton">
+          <input type="radio" name="favoriteFruit" id="orangeRadioButton" />
+          Apelsin
+        </label>
+      </fieldset>
+
+      <br /><br /><br />
+
+      <label for="cityInput">Vilken stad bor du i?</label>
+      <select name="" id="cityInput">
+        <option value="" disabled selected>Välj en stad i listan</option>
+        <optgroup label="Storstäder">
+          <option value="1">Stockholm</option>
+          <option value="2">Göteborg</option>
+          <option value="3">Malmö</option>
+        </optgroup>
+        <option value="4">Skövde</option>
+      </select>
+
+      <br />
+      <br />
+      <br />
+      <button type="reset">Rensa</button>
+      <button type="submit">Skicka</button>
+    </form>
+
+    <!-- Tabeller -->
+
+    <table>
+      <!-- tr: Table Row -->
+      <!-- th: Table Heading -->
+      <!-- td: Table Data -->
+      <thead>
+        <tr>
+          <th>Ordernummer</th>
+          <th>Orderdatum</th>
+          <th>Status</th>
+          <th>Totalbelopp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#928374</td>
+          <td>16 sep 2022</td>
+          <td>Betald</td>
+          <td>139,00 SEK</td>
+        </tr>
+        <tr>
+          <td>#23452435</td>
+          <td>10 sep 2022</td>
+          <td>Plockas</td>
+          <td>439,00 SEK</td>
+        </tr>
+        <tr>
+          <td>#3456345</td>
+          <td>02 sep 2022</td>
+          <td>Skickad</td>
+          <td>739,59 SEK</td>
+        </tr>
+        <tr>
+          <td>#928374</td>
+          <td>16 sep 2022</td>
+          <td>Returnerad</td>
+          <td>789,00 SEK</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>2 106,59 SEK</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Textformatering -->
+
+    <section>
+      <h1>Textformatering</h1>
+      <hr />
+
+      <p>
+        <b>Lorem ipsum</b>
+        dolor sit amet
+        <strong>Consequuntur sint</strong>
+        necessitatibus voluptatem amet incidunt fuga impedit distinctio unde
+        <br /><br />
+        <i>consectetur</i>, voluptatibus incidunt temporibus fugit a.
+        <br /><br />
+        <em> adipisicing elit. magni! Rem dolore eos aspernatur </em>
+        <br /><br />
+        voluptatibus incidunt temporibus fugit a.
+
+        <mark>Officiis</mark>, minus? <br /><br />
+
+        <small>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </small>
+        <br /><br />
+
+        <del>Veritatis doloremque, accusantium quam</del>
+
+        <br /><br />
+        <span>
+          exercitationem quia veniam iste doloribus laudantium. Debitis commodi
+        </span>
+        <br /><br />
+
+        earum voluptatibus cum quibusdam nemo voluptates libero fugit, ad sequi!
+      </p>
+    </section>
+
+    <section style="background-color: red; padding: 24px">
+      <h1>Inline Styling</h1>
+      <hr />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus
+        labore in eos odio magnam, dolore, numquam voluptate temporibus officiis
+        laudantium fugiat pariatur repudiandae harum. Accusantium ad rem
+        necessitatibus animi!
+      </p>
+    </section>
+    <section>
+      <h1 style="background-color: green">Inline Styling</h1>
+      <hr />
+      <p style="background-color: green">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus
+        labore in eos odio magnam, dolore, numquam voluptate temporibus officiis
+        laudantium fugiat pariatur repudiandae harum. Accusantium ad rem
+        necessitatibus animi!
+      </p>
+    </section>
+    <!-- Emmet Comando: section>h1{Font Size}+hr+p -->
+    <section>
+      <h1
+        style="
+          font-size: 12px;
+          font-weight: normal;
+          margin-bottom: 200px;
+          padding-bottom: 100px;
+          background-color: blue;
+          color: white;
+        "
+      >
+        Font size
+      </h1>
+      <h2
+        style="
+          padding: 24px;
+          padding-left: 8px;
+          background-color: red;
+          text-align: center;
+        "
+      >
+        asdf Font size
+      </h2>
+      <h3>Font size</h3>
+      <h4>Font size</h4>
+      <h5>Font size</h5>
+      <h6>Font size</h6>
+
+      <hr />
+      <p style="text-align: center">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nam
+        delectus odio nulla. Quo commodi, libero amet, debitis earum, tempora
+        nulla ratione soluta id distinctio quaerat minima impedit dolore error?
+      </p>
+    </section>
+
+    <div id="styleExample">
+      <h1>Stylingexempel (h1)</h1>
+      <h2>Stylingexempel (h2)</h2>
+    </div>
+  </body>
+</html>

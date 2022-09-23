@@ -1,0 +1,56 @@
+h1 {
+  background-color: red;
+  display: block;
+}
+
+p {
+  display: inline;
+}
+
+.flexboxContainer {
+  height: 70vh;
+  display: flex;
+  padding: 24px;
+  background-color: coral;
+  justify-content: center;
+  justify-content: end;
+  justify-content: start;
+  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.flexboxItem {
+  border: 3px solid black;
+  flex-basis: 0;
+}
+
+#flexItem1 {
+  flex-grow: 1;
+}
+
+#flexItem2 {
+  flex-grow: 1;
+  line-height: 70px;
+  /* align-self: flex-end; */
+}
+
+#flexItem3 {
+  flex-grow: 1;
+}
+
+header {
+  background-color: pink;
+  display: flex;
+  padding: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 32px;
+}
