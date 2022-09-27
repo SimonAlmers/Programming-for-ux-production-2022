@@ -1,0 +1,83 @@
+.gridItem {
+  border: 2px solid red;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+section#gridExample {
+  border: 2px solid black;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 16px;
+}
+
+section#gridArea {
+  border: 2px solid black;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "article aside"
+    "banner1 banner1"
+    "banner2 banner2"
+    "footer footer";
+  grid-template-columns: auto 300px;
+  grid-template-rows: 150px 100vh 200px 300px 560px;
+}
+
+@media screen and (max-width: 900px) {
+  section#gridArea {
+    grid-template-areas:
+      "header header"
+      "banner1 banner2"
+      "article article"
+      "aside aside"
+      "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 200px 100vh 300px 560px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#gridArea {
+    grid-template-areas:
+      "header"
+      "banner1"
+      "article"
+      "aside"
+      "banner2"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 200px 200vh 200px 300px 560px;
+  }
+}
+
+header {
+  background-color: red;
+  grid-area: header;
+}
+
+article {
+  background-color: pink;
+  grid-area: article;
+}
+
+aside {
+  background-color: lightgray;
+  grid-area: aside;
+}
+
+#banner1 {
+  background-color: green;
+  grid-area: banner1;
+}
+#banner2 {
+  background-color: blue;
+  grid-area: banner2;
+}
+
+footer {
+  background-color: orange;
+  grid-area: footer;
+}

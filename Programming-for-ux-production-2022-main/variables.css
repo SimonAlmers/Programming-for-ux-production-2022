@@ -1,0 +1,65 @@
+:root {
+  /* Color Variables */
+  --primary-text-color: #000000;
+  --primary-400: #1deaa9;
+  --primary-500: #00c87f;
+  --primary-600: #00896e;
+
+  /* Font Sizes */
+  --text-size-normal: 1rem;
+  --text-size-lg: 3rem;
+
+  /* Spacing */
+  /* 4px */
+  --spacing-1: 0.25rem;
+  /* 8px */
+  --spacing-2: 0.5rem;
+  /* 16px */
+  --spacing-3: 1rem;
+  /* 24px */
+  --spacing-4: 1.5rem;
+  /* 48px */
+  --spacing-5: 3rem;
+
+  /* Shadow Variables */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.65);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text-color: #ffffff;
+    --primary-400: #3d6d5e;
+    --primary-500: #274439;
+    --primary-600: #1f3a34;
+  }
+}
+
+#box1 {
+  background-color: var(--primary-400);
+  color: var(--primary-text-color);
+  padding: var(--spacing-3) var(--spacing-4);
+  margin-bottom: var(--spacing-5);
+}
+
+#box2 {
+  background-color: var(--primary-500);
+  color: var(--primary-text-color);
+  padding: var(--spacing-4);
+}
+
+#box3 {
+  background-color: var(--primary-400);
+  color: var(--primary-text-color);
+  padding: var(--spacing-4);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 96px;
+}
+
+#box4 {
+  background-color: var(--primary-600);
+  color: var(--primary-text-color);
+  border: 5px solid var(--primary-400);
+  padding: var(--spacing-4);
+  box-shadow: var(--shadow-lg);
+}
